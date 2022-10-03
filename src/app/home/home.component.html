@@ -11,14 +11,16 @@
     </div>
 
 
-
-    <div *ngFor="let trai of traiCay2; let i = index">
+    <table class="demo">
         <tr>
+            <th>Ten</th>
+            <th>Gia</th>
+            <th>Ha gia</th>
+        </tr>
+        <tr *ngFor="let trai of traiCay2; let i = index">
             <td> {{trai.ten}} </td>
             <td> {{trai.gia}} </td>
-            <td *ngIf=" trai.haGia === true; then a; else b"></td>
-            ng-template
+            <td *ngIf=" trai.haGia === true">Hạ giá</td>
         </tr>
-
-    </div>
+    </table>
 </div>
