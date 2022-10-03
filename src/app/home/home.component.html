@@ -16,7 +16,8 @@
         <tr>
             <td> {{trai.ten}} </td>
             <td> {{trai.gia}} </td>
-            <!-- <td *ngIf=" {{trai.haGia}} === true; "></td> -->
+            <td *ngIf=" trai.haGia === true; then a; else b"></td>
+            ng-template
         </tr>
 
     </div>
