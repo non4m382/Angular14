@@ -9,4 +9,15 @@
     <div *ngFor="let trai of traiCay; let i = index">
         <li>{{i + 1}}. {{ trai }}</li>
     </div>
+
+
+
+    <div *ngFor="let trai of traiCay2; let i = index">
+        <tr>
+            <td> {{trai.ten}} </td>
+            <td> {{trai.gia}} </td>
+            <!-- <td *ngIf=" {{trai.haGia}} === true; "></td> -->
+        </tr>
+
+    </div>
 </div>
